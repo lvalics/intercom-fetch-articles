@@ -10,34 +10,34 @@ This tool is designed for extracting articles from an Intercom account. It allow
 
 ## Installation and Setup
 
-### Clone the Repository
+## Clone the Repository
 Clone the repository from GitHub to your local machine:
 ```bash
-git clone https://github.com/lvalics/intercom-fetch-articles/```
+git clone https://github.com/lvalics/intercom-fetch-articles/
 
 ## Install Dependencies
 Navigate to the cloned directory and install the required Python packages:
 
 ```bash
 cd intercom-fetch-articles
-pip install -r requirements.txt```
+pip install -r requirements.txt
 
 ## Configure Environment Variables
 Copy the .env.example file to a new file named .env.
 Edit the .env file to include your Intercom API keys and other necessary configuration details.
 
-### Usage
+## Usage
 ## Step 1: Get All Article IDs
 Fetch all article IDs from your Intercom account. The IDs will be saved to a file.
 
 ```bash
-python get_articles.py```
+python get_articles.py
 
 ## Step 2: Fetch Articles
 Retrieve all articles from Intercom using the fetched IDs. Articles will be saved in a JSON file.
 
 ```bash
-python fetch_article_data.py```
+python fetch_article_data.py
 
 ## Step 3: Download Images
 Process JSON files to extract image URLs and download them into a designated folder.
